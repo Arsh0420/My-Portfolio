@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: hsl(254, 40%, 8%);
+    color: white;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-transform: uppercase;
+}
+
+.page1{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page1 .nav{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.page1 #myEmail{
+    text-transform: lowercase;
+}
+.page1 .nav2 button{
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.page1 .nav2 button a{
+    text-decoration: none;
+    color: blue;
+}
+.page1 .nav2 button:hover{
+    color: black;
+    background-color: white;
+}
+
+.page1 .page-title{
+    font-size: 4em;
+    width: 50%;
+    letter-spacing: 5px;
+}
+.page1 .page-title span{
+    color: blue;
+}
+.page1 img{
+    height: auto;
+    width: 400px;
+    position: absolute;
+    right: 200px;
+    bottom: 150px;
+}
+
+.page2{
+    min-height: 100vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page2 .aboutMe{
+    font-size: 2em;
+    text-align: center;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+
+.page2 .subSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+}
+.page2 .subSection .vertical-Line{
+    height: 50%;
+    width: 2px;
+    background-color: white;
+}
+.page2 .mySkills{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page2 .myHobbies{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page2 .mySkills h2{
+    margin-bottom: auto;
+    margin-top: 50px;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page2 .mySkills h2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.page2 .myHobbies h2{
+    margin-bottom: auto;
+    margin-top: 50px;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page2 .myHobbies h2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.page2 .icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page2 .icons i{
+    margin-bottom: 20px;
+}
+.page2 .hobbyIcons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page2 .hobbyIcons i{
+    margin-bottom: 20px;
+}
+.ri-html5-line{
+    color: rgb(255, 6, 6);
+}
+.ri-css3-line{
+    color: blue;
+}
+.ri-javascript-line{
+    color: yellow;
+}
+.ri-reactjs-fill{
+    color: rgb(2, 185, 247);
+}
+.ri-gamepad-line{
+    color: orange;
+}
+.ri-weight-line{
+    color: orange;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page3 .aboutMe{
+    font-size: 2em;
+    text-align: center;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+
+.page3 .subSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+}
+.page3 .subSection .vertical-Line{
+    height: 50%;
+    width: 2px;
+    background-color: white;
+}
+.page3 .myProjects{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page3 .contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page3 .myProjects h2{
+    margin-bottom: auto;
+    margin-top: 50px;
+    font-size: 2em;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page3 .myProjects h2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.page3 .contact h2{
+    margin-bottom: auto;
+    margin-top: 50px;
+    font-size: 2em;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page3 .contact h2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.page3 .projects{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    animation: fade 1s linear;
+    animation-timeline: view();
+}
+.page3 a{
+    margin-bottom: 20px;
+    font-size: .8em;
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    width: 100%;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.page3 a:hover{
+    color: white;
+}
+
+.page3 .contactMe{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
